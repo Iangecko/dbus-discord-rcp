@@ -1,7 +1,9 @@
 # Discord D-Bus RPC
+[![pypresence](https://img.shields.io/badge/using-pypresence-00bb88.svg?style=for-the-badge&logo=discord&logoWidth=20)](https://github.com/qwertyquerty/pypresence)
+
 This program only works on Linux and has been tested on ubuntu.
 
-It requires `pypresence`, which can be installed with the following command
+It requires [`pypresence`](https://pypi.org/project/pypresence/), which can be installed with the following command
 ```
 $ pip3 install pypresence
 ```
