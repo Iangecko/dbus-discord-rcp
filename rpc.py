@@ -96,7 +96,7 @@ class Presence:
             exit()
     
     def update(self, state, details, **kwargs):
-        self.RPC.update(state=state, details=details, large_text="D-Bus discord RPC made by Gecko", **kwargs)
+        self.RPC.update(state=state, details=details, large_text="https://github.com/Iangecko/dbus-discord-rcp", **kwargs)
 
     def update_song(self, song:Song):
         self.update(state=f"{song.artist} - {song.album}", details=song.title, large_image=self.large_image,
@@ -179,4 +179,4 @@ if __name__ == "__main__":
     import config
     bus = Bus(config.bus_name)
     presence = Presence(config.client_id)
-    poll(bus, presence)
+    poll(bus, presence, print_status=True, bash_formatting=False)

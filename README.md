@@ -24,7 +24,6 @@ Input the address into `bus_name` in `config.py`, then ensure the discord client
 $ python3 rpc.py
 ```
 this should connect to your discord client and you should see the following
-
 ```
 Connected to bus [ADDRESS]
 Connected to discord client [CLIENT ID]
@@ -33,6 +32,7 @@ Awaiting media updates...
 [TIMESTAMP] (DURATION) TITLE - ARTIST
 ...
 ```
+For colored text set `bash_formatting` to `True` at the bottom of rpc.py if your terminal supports it.
 
 On discord you should now have a rich presence showing title, artist, album, and remaining time. If any of the information is not present "None" will be displayed for the missing information.
 
