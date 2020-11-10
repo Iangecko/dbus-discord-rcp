@@ -179,4 +179,4 @@ if __name__ == "__main__":
     import config
     bus = Bus(config.bus_name)
     presence = Presence(config.client_id)
-    poll(bus, presence, print_status=True, bash_formatting=False)
+    poll(bus, presence)
