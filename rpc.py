@@ -168,7 +168,7 @@ def poll(bus, presence, polling_time:int=15, show_updates=True, bash_formatting=
                     print(f"[{timestamp}] ({duration}s) {current_song.title} - {current_song.artist}")
 
         try:
-            time.sleep(15)
+            time.sleep(polling_time)
         except KeyboardInterrupt:
             presence.close()
             if bash_formatting: print(f"\n{c.red}Connection {c.bold}terminated{c.clear}")
